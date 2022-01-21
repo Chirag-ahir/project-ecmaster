@@ -202,14 +202,17 @@ header{
 @media(max-width: 769px){
     .service{
         grid-template-columns: repeat(2,1fr);
-        margin: 0px 40px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 5px;
     } 
 }
 @media(max-width: 570px){
     .service{
         grid-template-columns: repeat(1,1fr);
-        margin: 0px 40px;
-        padding-left: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 5px;
     }
 }
 @media(max-width: 370px){
