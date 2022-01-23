@@ -117,7 +117,7 @@ if (navigator.share) {
  // Show button if it supports webShareAPI  
  btn.style.display = "block";  
  btn.addEventListener("click", () =>  
-  webShareAPI("header", "EC Master •|• Online plateform for EC Students", "ECMaster.netlify.app")  
+  webShareAPI("header", "EC Master •|• Online plateform for EC Students", "")  
  );  
 } else {  
  // Hide button if it supports webShareAPI  
