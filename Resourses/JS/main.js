@@ -53,7 +53,7 @@ function projectdone()
      count1++;
      document.querySelector("#number1").innerHTML=count1;
      // stop at given condition
-     if(count1 == 3)
+     if(count1 == 8)
      {
           clearInterval(project)
      }
@@ -63,7 +63,7 @@ function views()
      count2++;
      document.querySelector("#number2").innerHTML=count2;
      // stop at given condition
-     if(count2==1070)
+     if(count2==1200)
      {
           clearInterval(view)
      }
@@ -162,4 +162,3 @@ var loader = document.getElementById("preloader");
 window.addEventListener("load",function(){
      loader.style.display="none";
 })
-
