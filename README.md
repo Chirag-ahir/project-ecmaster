@@ -1,2 +1,2 @@
 # project-EC Master
-![](thumbnail.png)
+![](Thumbnails/thumbnail.png)
