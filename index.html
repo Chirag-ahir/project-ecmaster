@@ -2,10 +2,10 @@
     offset:200,
     duration:1000,
   });
-    // (A) PREVENT CONTEX MENU
+      // (A) PREVENT CONTEX MENU
   document.addEventListener("contextmenu", (evt) => {
-    evt.preventDefault();
-  }, false);
+  evt.preventDefault();
+}, false);
 
   // (B) PREVENT CLIPBOARD COPYING
   document.addEventListener("copy", (evt) => {
@@ -15,7 +15,13 @@
 
   // (C) DISABLE CTRL KEY
   document.addEventListener("keydown", function (event) {
-    if (event.ctrlKey) {
+    if (event.shiftKey) {
         event.preventDefault();
     }   
-  });</script>
+  });
+  document.addEventListener("keydown", function (event) {
+    if (event.ctrlKey && (event.keyCode === 85 || event.keyCode === 83 || event.keyCode ===65 )){  
+      event.preventDefault();  
+      } 
+  });
+</script>
