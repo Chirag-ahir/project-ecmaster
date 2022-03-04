@@ -1,3 +1,4 @@
+
 *,
 body {
   padding: 0px;
@@ -7,8 +8,8 @@ body {
 
 /* #loading design started */
 #preloader {
-  background: #000 url(/Thumbnails/loading.gif) no-repeat center center;
-  background-size: 15%;
+  background: #FFFFFF url(/Thumbnails/loading.gif) no-repeat center center;
+  background-size: 45%;
   height: 100vh;
   width: 100%;
   position: fixed;
@@ -223,6 +224,9 @@ header {
   div.input-group {
     margin-top: 10px;
   }
+  #preloader{
+    background-size: 95%;
+  }
 }
 @media (max-width: 570px) {
   .service {
@@ -414,7 +418,7 @@ header {
   .gridde {
     grid-template-columns: repeat(2, 1fr);
     margin: 50px;
-    margin-left: 53px;
+    margin-left: 54px;
   }
   .sheadingd {
     padding-top: 40px;
