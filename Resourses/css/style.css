@@ -6,6 +6,12 @@ body {
   scroll-behavior: smooth;
 }
 
+* { user-select: none; }
+/* *::selection { background: none; }
+*::-moz-selection { background: none; }
+*::-webkit-touch-callout{cursor:none;} */
+
+
 /* #loading design started */
 #preloader {
   background: #FFFFFF url(/Thumbnails/loading.gif) no-repeat center center;
@@ -18,9 +24,9 @@ body {
 /* loading design end */
 
 /* for hiding scrollbar */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   display: none;
-}
+} */
 
 /* dark mode design started */
 .dark-mode {
