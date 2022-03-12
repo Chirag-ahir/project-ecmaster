@@ -1,86 +1,28 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EC Master/SEM 7</title>
-  <!-- icon link -->
-  <link rel="icon" href="/Thumbnails/logo.webp">
-  <link rel="stylesheet" type="text/css" href="/Resourses/css/style.css">
-  <script src="https://kit.fontawesome.com/e2f3f8e690.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <div id="preloader"></div>
-  <div class="s-layout">  
-    <div class="s-layout__sidebar">  
-      <a class="s-sidebar__trigger" href="#">  
-        <i class="fa fa-bars"></i>  
-      </a>  
-      <nav class="s-sidebar__nav">  
-        <ul>  
-            <li>
-               <img src="/Thumbnails/logo.webp" class="grid-logo">
-            </li>
-            <li>  
-                <a class="s-sidebar__nav-link" href="grid_ml.html" target="resourse">  
-                  <i class="fas fa-book-reader"></i><em>ML</em>  
-                </a>  
-            </li>  
-            <li>  
-                <a class="s-sidebar__nav-link" href="grid_ai.html" target="resourse">  
-                  <i class="fas fa-book-reader"></i><em>AI</em>  
-                </a>  
-            </li>
-            <li>  
-                <a class="s-sidebar__nav-link" href="grid_wc.html" target="resourse">  
-                <i class="fas fa-book-reader"></i><em>WC</em>  
-                </a>  
-            </li>  
-            <li>  
-                <a class="s-sidebar__nav-link" href="grid_iot.html" target="resourse">  
-                <i class="fas fa-book-reader"></i><em>IOT</em>  
-                </a>  
-            </li>  
-            <li>  
-                <a class="s-sidebar__nav-link" href="grid_dsp.html" target="resourse">  
-                <i class="fas fa-book-reader"></i><em>DSP</em>  
-                </a>  
-            </li>  
-            <li>  
-                <a class="s-sidebar__nav-link" href="grid_divp.html" target="resourse">  
-                <i class="fas fa-book-reader"></i><em>DIVP</em>  
-                </a>  
-            </li> 
-            <li>  
-              <a class="s-sidebar__nav-link" href="grid_tav.html" target="resourse">  
-              <i class="fas fa-book-reader"></i><em>TAV</em>  
-              </a>  
-           </li>  
-           <li>
-             <a  class="s-sidebar__nav-link" href="/index.html"><i class="fas fa-home"></i><em>Home</em></a>
-           </li>
-        </ul>  
-    </nav>  
-  </div>  
-  <!-- sidebardesign end -->
-
-  <!-- content display started -->
-  <main class="s-layout__content">  
-    <iframe src="grid_ml.html" height="100%" width="100%" style="margin: none; padding: none; border: none;" name="resourse" ></iframe>
-  </main>
-  <!-- content display end -->
-
-</body>
-<script>
-  // loading animation
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>EC Master/SEM 7</title><link rel="icon" href="/Thumbnails/logo.webp"><link rel="stylesheet" type="text/css" href="/Resourses/css/style.css"><script src="https://kit.fontawesome.com/e2f3f8e690.js" crossorigin="anonymous"></script></head><body><div id="preloader"></div><div class="s-layout"><div class="s-layout__sidebar"><a class="s-sidebar__trigger" href="#"><i class="fa fa-bars"></i></a><nav class="s-sidebar__nav"><ul><li><img src="/Thumbnails/logo.webp" class="grid-logo"></li><li><a class="s-sidebar__nav-link" href="grid_ml.html" target="resourse"><i class="fas fa-book-reader"></i><em>ML</em></a></li><li><a class="s-sidebar__nav-link" href="grid_ai.html" target="resourse"><i class="fas fa-book-reader"></i><em>AI</em></a></li><li><a class="s-sidebar__nav-link" href="grid_wc.html" target="resourse"><i class="fas fa-book-reader"></i><em>WC</em></a></li><li><a class="s-sidebar__nav-link" href="grid_iot.html" target="resourse"><i class="fas fa-book-reader"></i><em>IOT</em></a></li><li><a class="s-sidebar__nav-link" href="grid_dsp.html" target="resourse"><i class="fas fa-book-reader"></i><em>DSP</em></a></li><li><a class="s-sidebar__nav-link" href="grid_divp.html" target="resourse"><i class="fas fa-book-reader"></i><em>DIVP</em></a></li><li><a class="s-sidebar__nav-link" href="grid_tav.html" target="resourse"><i class="fas fa-book-reader"></i><em>TAV</em></a></li><li><a class="s-sidebar__nav-link" href="/index.html"><i class="fas fa-home"></i><em>Home</em></a></li></ul></nav></div><main class="s-layout__content"><iframe src="grid_ml.html" height="100%" width="100%" style="margin:none;padding:none;border:none" name="resourse"></iframe></main></div></body><script>// loading animation
   var loader = document.getElementById("preloader");
   window.addEventListener("load",function(){
       loader.style.display="none";
   })
-</script>>
-
-</html>
-
-
+  document.addEventListener(
+  "contextmenu",
+  (evt) => {
+    evt.preventDefault();
+  },
+  false
+);
+document.addEventListener(
+  "copy",
+  (evt) => {
+    evt.clipboardData.setData(
+      "text/plain",
+      "EC Master team not allowing anyone to copy their content. Feel free to use our resources for your preparation."
+    );
+    evt.preventDefault();
+  },
+  false
+);
+document.addEventListener("keydown", function (event) {
+  if (event.ctrlKey) {
+    event.preventDefault();
+  }
+});</script></html>
