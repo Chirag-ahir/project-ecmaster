@@ -1,83 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EC Master/SEM 5</title>
-  <script src="https://kit.fontawesome.com/e2f3f8e690.js" crossorigin="anonymous"></script>
-  <!-- icon link -->
-  <link rel="icon" href="/Thumbnails/logo.webp">
-  <link rel="stylesheet" type="text/css" href="/Resourses/css/style.css">
-  
-</head>
-<body>
-  <div id="preloader"></div>
-
-  <div class="s-layout">  
-    <div class="s-layout__sidebar">  
-      <a class="s-sidebar__trigger" href="#">  
-        <i class="fa fa-bars"></i>  
-      </a>  
-      <nav class="s-sidebar__nav">  
-        <ul>  
-            <li>
-               <img src="/Thumbnails/logo.webp" class="grid-logo">
-            </li>
-            <li>  
-                <a class="s-sidebar__nav-link" href="grid_adc.html" target="resourse">  
-                  <i class="fas fa-book-reader"></i><em>ADC</em>  
-                </a>  
-            </li>  
-            <li>  
-                <a class="s-sidebar__nav-link" href="grid_amc.html" target="resourse">  
-                  <i class="fas fa-book-reader"></i><em>AMC</em>  
-                </a>  
-            </li>
-            <li>  
-                <a class="s-sidebar__nav-link" href="grid_pom.html" target="resourse">  
-                <i class="fas fa-book-reader"></i><em>POM</em>  
-                </a>  
-            </li>  
-            <li>  
-                <a class="s-sidebar__nav-link" href="grid_python.html" target="resourse">  
-                <i class="fas fa-book-reader"></i><em>Python</em>  
-                </a>  
-            </li>  
-            <li>  
-                <a class="s-sidebar__nav-link" href="grid_vlsi.html" target="resourse">  
-                <i class="fas fa-book-reader"></i><em>VLSI</em>  
-                </a>  
-            </li>  
-            <li>  
-                <a class="s-sidebar__nav-link" href="grid_powerele.html" target="resourse">  
-                <i class="fas fa-book-reader"></i><em>Power Electronics</em></a>  
-            </li>  
-            <li>
-                <a  class="s-sidebar__nav-link" href="/index.html"><i class="fas fa-home"></i><em>Home</em></a>
-            </li>
-        </ul>  
-    </nav>  
-  </div>  
-  <!-- sidebardesign end -->
-
-  <!-- content display started -->
-  <main class="s-layout__content">  
-    <iframe src="grid_adc.html" height="100%" width="100%" style="margin: none; padding: none; border: none;" name="resourse" ></iframe>
-  </main>
-  <!-- content display end -->
-
-  <script>
-    // loading animation
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>EC Master/SEM 5</title><script src="https://kit.fontawesome.com/e2f3f8e690.js" crossorigin="anonymous"></script><link rel="icon" href="/Thumbnails/logo.webp"><link rel="stylesheet" type="text/css" href="/Resourses/css/style.css"></head><body><div id="preloader"></div><div class="s-layout"><div class="s-layout__sidebar"><a class="s-sidebar__trigger" href="#"><i class="fa fa-bars"></i></a><nav class="s-sidebar__nav"><ul><li><img src="/Thumbnails/logo.webp" class="grid-logo"></li><li><a class="s-sidebar__nav-link" href="grid_adc.html" target="resourse"><i class="fas fa-book-reader"></i><em>ADC</em></a></li><li><a class="s-sidebar__nav-link" href="grid_amc.html" target="resourse"><i class="fas fa-book-reader"></i><em>AMC</em></a></li><li><a class="s-sidebar__nav-link" href="grid_pom.html" target="resourse"><i class="fas fa-book-reader"></i><em>POM</em></a></li><li><a class="s-sidebar__nav-link" href="grid_python.html" target="resourse"><i class="fas fa-book-reader"></i><em>Python</em></a></li><li><a class="s-sidebar__nav-link" href="grid_vlsi.html" target="resourse"><i class="fas fa-book-reader"></i><em>VLSI</em></a></li><li><a class="s-sidebar__nav-link" href="grid_powerele.html" target="resourse"><i class="fas fa-book-reader"></i><em>Power Electronics</em></a></li><li><a class="s-sidebar__nav-link" href="/index.html"><i class="fas fa-home"></i><em>Home</em></a></li></ul></nav></div><main class="s-layout__content"><iframe src="grid_adc.html" height="100%" width="100%" style="margin:none;padding:none;border:none" name="resourse"></iframe></main><script>// loading animation
     var loader = document.getElementById("preloader");
     window.addEventListener("load",function(){
         loader.style.display="none";
     })
-  </script>
-</body>
-
-
-
-</html>
-
-
+    document.addEventListener(
+    "contextmenu",
+    (evt) => {
+      evt.preventDefault();
+    },
+    false
+  );
+  document.addEventListener(
+    "copy",
+    (evt) => {
+      evt.clipboardData.setData(
+        "text/plain",
+        "EC Master team not allowing anyone to copy their content. Feel free to use our resources for your preparation."
+      );
+      evt.preventDefault();
+    },
+    false
+  );
+  document.addEventListener("keydown", function (event) {
+    if (event.ctrlKey) {
+      event.preventDefault();
+    }
+  });</script></div></body></html>
