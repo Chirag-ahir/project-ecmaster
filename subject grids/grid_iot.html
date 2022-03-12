@@ -69,5 +69,36 @@
     <!-- material content grid end -->
     <p class="text-white bg-dark p-2 m-0 text-center">Push yourself because no one else'll do it for you.</p>
 
+    <script>
+        // loading animation
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load",function(){
+            loader.style.display="none";
+        })
+        document.addEventListener(
+        "contextmenu",
+        (evt) => {
+          evt.preventDefault();
+        },
+        false
+      );
+      document.addEventListener(
+        "copy",
+        (evt) => {
+          evt.clipboardData.setData(
+            "text/plain",
+            "EC Master team not allowing anyone to copy their content. Feel free to use our resources for your preparation."
+          );
+          evt.preventDefault();
+        },
+        false
+      );
+      document.addEventListener("keydown", function (event) {
+        if (event.ctrlKey) {
+          event.preventDefault();
+        }
+      });
+    </script>
+
 </body>
 </html>
